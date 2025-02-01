@@ -15,7 +15,7 @@ use App\Http\Controllers\Api\TodoController;
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::apiResource('todos', TodoController::class);
+    Route::apiResource('/api/todos', TodoController::class);
 });
 
 Route::middleware([
